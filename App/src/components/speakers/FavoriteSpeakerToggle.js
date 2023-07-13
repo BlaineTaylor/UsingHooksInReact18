@@ -1,6 +1,9 @@
+import { useContext, useState } from "react";
+import { SpeakersDataContext } from "../contexts/SpeakersDataContext";
+
 export default function FavoriteSpeakerToggle({ speakerRec }) {
-  const { updateSpeaker } = { updateSpeaker: () => {} };
-  const [updating, setUpdating] = [false, () => {}];
+  const { updateSpeaker } = useContext(SpeakersDataContext);
+  const [updating, setUpdating] = useState(false);
 
   return (
     <button

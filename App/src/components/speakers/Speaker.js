@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../contexts/ThemeContext";
 import SpeakerDetail from "./SpeakerDetail";
 import { speakerList } from "../../../speakersData";
 
